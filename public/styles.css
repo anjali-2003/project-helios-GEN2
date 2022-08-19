@@ -1,0 +1,35 @@
+html{
+    background-color: black;
+}
+.heading{
+    color: brown;
+    margin-top: 0px;
+    border-top: 0px;
+    padding-top: 0px;
+}
+button{
+    height: 70px;
+    width: 80px;
+    color:blueviolet;
+    padding: 10px;
+    font-size: 25px;
+    margin-top: 0px;
+    border-top: 0px;
+    padding-top: 0px;
+}
+.btn-off{
+    margin-left: 400px;
+    margin-top: 0px;
+}
+.main-img{
+    height: 70%;
+    width: 30%;
+    margin-left: 90px;
+    margin-top: 0px;
+    border-top: 0px;
+    padding-top: 0px;
+}
+
+.rows .row{
+    display: inline-block;
+}
