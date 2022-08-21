@@ -1,11 +1,15 @@
 html{
     background-color: black;
 }
+h1{
+    color: blue;
+}
 .heading{
     color: brown;
     margin-top: 0px;
     border-top: 0px;
     padding-top: 0px;
+    width: 30%;
 }
 button{
     height: 70px;
@@ -16,9 +20,10 @@ button{
     margin-top: 0px;
     border-top: 0px;
     padding-top: 0px;
+    
 }
 .btn-off{
-    margin-left: 400px;
+    margin-left: 40px;
     margin-top: 0px;
 }
 .main-img{
@@ -30,6 +35,60 @@ button{
     padding-top: 0px;
 }
 
-.rows .row{
+.row{
     display: inline-block;
+    /* float: left; */
+}
+
+.main-img .row{
+    float: right;
+}
+
+.img-div{
+    width: 500px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgb(139, 222, 186, 0.2);
+    width: 345px;
+}
+  
+.container {
+    padding: 0 16px;
+}
+h2{
+    color: blue;
+    font-size: 40px;
+}
+p{
+    color: blue;
+}
+
+.team-img{
+    height: 280px;
+    width: 280px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.icons{
+    padding-bottom: 20px;
+    padding-left: 5px;
+}
+
+.team-mem-name{
+    margin-bottom: 10px;
+    margin-left: 12px;
+}
+
+.adv{
+    background-color: rgba(58, 58, 58, 0.5);
+    width: 280px;
+}
+
+.adv-img{
+    height: 280px;
+    width: 280px;
 }
