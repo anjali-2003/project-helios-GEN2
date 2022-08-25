@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-let x=true;
+let x=false;
 
 function Buttons(){
 
@@ -8,9 +8,9 @@ function Buttons(){
 
   function click(){
     handleClick(true);
-    x={clicked}
-  }
-
+    x={clicked};
+    alert("on")
+  };
 
   return (
     <div className="btn row">

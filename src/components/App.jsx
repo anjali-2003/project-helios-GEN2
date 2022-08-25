@@ -36,26 +36,40 @@ function createText(des) {
 
 function App() {
 
-  if (x===false){
-  // if (x===true){
+  // if (x===false){
+  if (x===true){
     return(
       <div>
         <Page2 />
         <div style={{color:"white", fontSize:40, textAlign:"center"}}>Advantages</div>
-        {description.map(createText)}
+        {/* {description.map(createText)} */}
+        <div style={{paddingLeft:200, paddingRight:200}}>
+          {description.map(createText)}
+        </div>
         <div style={{color:"white", fontSize:40, textAlign:"center"}}>Team Members</div>
-        {contacts.map(createCard)}
+        <div style={{paddingLeft:130, paddingRight:100}}>
+          {contacts.map(createCard)}
+        </div>
       </div>
     );
   }
   else{
     return (
-      <div>
-        <Heading />
-        <Buttons />
-        <MainImage />
-        <div style={{color:"white", fontSize:40, textAlign:"center"}}>Dis - advantages</div>
-        {description.map(createText)}
+      <div >
+        <div>
+          <div className="left-box">
+            <Heading />
+            <Buttons />
+          </div>
+          <MainImage />
+        </div>
+        {/* <div > */}
+          <div style={{color:"white", fontSize:40, textAlign:"center"}}>Dis - advantages</div>
+
+          <div style={{paddingLeft:200, paddingRight:200}}>
+            {description.map(createText)}
+          </div>
+        {/* </div> */}
         <ScrollToTop smooth="true" viewBox="0 -50 350 200" />
       </div>
     );

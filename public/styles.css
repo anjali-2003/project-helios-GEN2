@@ -9,8 +9,17 @@ h1{
     margin-top: 0px;
     border-top: 0px;
     padding-top: 0px;
-    width: 30%;
+    /* width: 30%; */
 }
+.project{
+    font-size: 60px;
+    margin-bottom: 0;
+}
+.helio{
+    font-size: 150px;
+    margin-top: 10px;
+}
+
 button{
     height: 70px;
     width: 80px;
@@ -23,35 +32,43 @@ button{
     
 }
 .btn-off{
-    margin-left: 40px;
+    margin-left: 420px;
     margin-top: 0px;
 }
 .main-img{
-    height: 70%;
-    width: 30%;
+    height: 550px;
+    width: 500px;
     margin-left: 90px;
     margin-top: 0px;
     border-top: 0px;
     padding-top: 0px;
 }
 
-.row{
+/* .row{
     display: inline-block;
-    /* float: left; */
-}
+} */
 
 .main-img .row{
     float: right;
 }
 
 .img-div{
-    width: 500px;
+    width: 40%;
+    float: right;
+}
+.left-box{
+    float: left;
+    width: 60%;
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.4);
     background-color: rgb(139, 222, 186, 0.2);
     width: 345px;
+    display: inline-block;
+    margin: 20px;
+    margin-right: 50px;
+    border-radius: 8px;
 }
   
 .container {
@@ -86,9 +103,23 @@ p{
 .adv{
     background-color: rgba(58, 58, 58, 0.5);
     width: 280px;
+    height: 490px;
+    display: inline-block;
+    margin: 20px;
+    margin-right: 50px;
 }
 
 .adv-img{
     height: 280px;
     width: 280px;
 }
+.adv-description{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: justify;
+    width: 250px;
+}
+
+/* .adv-div{
+    display: inline-block;
+} */
