@@ -8,6 +8,7 @@ import contacts from "../contacts";
 import Adv from "./Adv";
 import description from "../description";
 import ScrollToTop from "react-scroll-to-top";
+import Features from "./Features";
 
 function createCard(contact) {
   return (
@@ -36,11 +37,12 @@ function createText(des) {
 
 function App() {
 
-  // if (x===false){
-  if (x===true){
+  if (x===false){
+  // if (x===true){
     return(
       <div>
         <Page2 />
+        <Features />
         <div style={{color:"white", fontSize:40, textAlign:"center"}}>Advantages</div>
         {/* {description.map(createText)} */}
         <div style={{paddingLeft:200, paddingRight:200}}>

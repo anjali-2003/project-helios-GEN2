@@ -123,3 +123,35 @@ p{
 /* .adv-div{
     display: inline-block;
 } */
+
+.feat-img {
+    height: 200px;
+    width: 175px;
+    float: left;
+}
+.feat-pt {
+    float: right;
+    width: 50%;
+    padding-top: 30px;
+}
+.ft-img {
+    height: 200px;
+    width: 175px;
+    float: right;
+}
+.ft-pt {
+    float: left;
+    width: 50%;
+    padding-top: 30px;
+}
+.featurealign {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 230px;
+    width: 40%;
+    margin: auto;
+    background-color: black;
+}
+.feat-pg {
+    background-color: black;
+}
