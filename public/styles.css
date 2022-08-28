@@ -130,6 +130,7 @@ p{
     float: left;
 }
 .feat-pt {
+    color: blue;
     float: right;
     width: 50%;
     padding-top: 30px;
@@ -140,6 +141,7 @@ p{
     float: right;
 }
 .ft-pt {
+    color: blue;
     float: left;
     width: 50%;
     padding-top: 30px;

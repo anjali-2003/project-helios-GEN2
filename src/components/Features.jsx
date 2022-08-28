@@ -6,18 +6,26 @@ import featuredata from "../featuredata";
 
 
 function Features() {
-
     return (
-        <div className="feat-pg"> 
-            <h1 className="ptitle" style={{textAlign:'center'}}>Features</h1>
-            <Card1 
-                img= {featuredata[0].imgsrc}
-                detail= {featuredata[0].detail}
-            />
-            <Card2 
-                img= {featuredata[1].imgsrc}
-                detail= {featuredata[1].detail}
-            />
+
+        <div className="feat-pg">
+            <h1>Features</h1>
+
+            {featuredata.map((Features) => {
+                return (
+                    (Features.id) % 2 === 0 ?
+                        <Card2
+                            id={Features.id}
+                            img={Features.imgsrc}
+                            detail={Features.detail}
+                        /> :
+                        <Card1
+                            id={Features.id}
+                            img={Features.imgsrc}
+                            detail={Features.detail}
+                        />
+                )
+            })}
         </div>
     );
 }
