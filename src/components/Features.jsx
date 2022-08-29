@@ -14,12 +14,12 @@ function Features() {
             {featuredata.map((Features) => {
                 return (
                     (Features.id) % 2 === 0 ?
-                        <Card2
+                        <Card1
                             id={Features.id}
                             img={Features.imgsrc}
                             detail={Features.detail}
                         /> :
-                        <Card1
+                        <Card2
                             id={Features.id}
                             img={Features.imgsrc}
                             detail={Features.detail}

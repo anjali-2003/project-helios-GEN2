@@ -6,7 +6,7 @@ function Card1(props) {
     return <div className="featurealign">
         <img className='feat-img' src={props.img} alt='MainImage' />
         <p className="feat-pt">{props.detail}
-            <Link to={'/' + props.id}>
+            <Link to={'/on/' + props.id}>
                 <span>...read more</span>
             </Link>
         </p>

@@ -1,20 +1,10 @@
 import React, {useState} from "react";
 import Page1 from "./Page1";
-import Page2 from "./Page2";
 import Heading from "./Heading.jsx";
 import MainImage from "./MainImage.jsx";
-import ImageOn from "./ImageOn";
+import { Link } from "react-router-dom";
 
 function Startingpage(){
-
-    const [clicked,handleClick] = useState(false) ;
-  
-    function clickOn(){
-      handleClick(true);
-    };
-    function clickOff(){
-      handleClick(false);
-    };
     
     return (
       <div>
@@ -22,13 +12,16 @@ function Startingpage(){
           <div className="left-box">
             <Heading />
             <div className="btn row">
-              <button  onClick={clickOff} className="btn-off">OFF</button>
-              <button  onClick={clickOn} className="btn-on"> ON </button>
+              <button className="btn-off">OFF</button>
+              <Link to={'/on'}>
+                <button className="btn-on"> ON </button>
+              </Link>
+              
             </div>
           </div>
-          {clicked?<ImageOn />:<MainImage />}
+          <MainImage />
         </div>
-        {clicked?<Page2 />:<Page1 />}
+        <Page1 />
     </div>
       
     );

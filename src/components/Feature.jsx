@@ -8,7 +8,7 @@ function Feature() {
     const id=params.id
     return <div className="featurealign">
         <h1>hey</h1>
-        <img className='feat-img' src={featuredata[id].imgsrc} alt='MainImage' />
+        <img className='feat-img' src={featuredata[id].img} alt='MainImage' />
         <p className="feat-pt">{featuredata[id].detail}</p> 
     </div>
 }
