@@ -3,24 +3,28 @@ import Page1 from "./Page1";
 import Heading from "./Heading.jsx";
 import MainImage from "./MainImage.jsx";
 import { Link } from "react-router-dom";
+import {Button} from "react-bootstrap";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 function Startingpage(){
+
+  const [color, changeColor] = useState("#000000");
     
     return (
-      <div>
-        <div>
-          <div className="left-box">
+      <div style={{ backgroundColor: color }}>
+        <Row className="top-div">
+          <Col>
             <Heading />
-            <div className="btn row">
-              <button className="btn-off">OFF</button>
-              <Link to={'/on'}>
-                <button className="btn-on"> ON </button>
+            <div className="on-off">
+              <Button size="lg">OFF</Button>
+              <Link to={'/on'} onClick={() => changeColor("#FFFFFF")}>
+                <Button size="lg"> ON </Button>
               </Link>
-              
             </div>
-          </div>
-          <MainImage />
-        </div>
+          </Col>
+          <Col className="img-col"><MainImage /></Col>
+        </Row>
         <Page1 />
     </div>
       

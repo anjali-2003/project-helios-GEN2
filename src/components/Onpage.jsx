@@ -1,28 +1,29 @@
 import React, {useState} from "react";
-import Page1 from "./Page1";
 import Page2 from "./Page2";
 import Heading from "./Heading.jsx";
-import MainImage from "./MainImage.jsx";
 import ImageOn from "./ImageOn";
 import { Link } from "react-router-dom";
+import {Button} from "react-bootstrap";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 function Onpage(){
 
     
     return (
       <div>
-        <div>
-          <div className="left-box">
+        <Row className="top-div">
+          <Col>
             <Heading />
-            <div className="btn row">
+            <div className="on-off">
               <Link to={'/'}>
-              <button className="btn-off">OFF</button>
+              <Button size="lg">OFF</Button>
               </Link>
-              <button className="btn-on"> ON </button>
+              <Button size="lg"> ON </Button>
             </div>
-          </div>
-          <ImageOn />
-        </div>
+            </Col>
+          <Col className="img-col"><ImageOn /></Col>
+        </Row>
         <Page2 />
     </div>
       

@@ -6,6 +6,7 @@ import Card from "./Card";
 import description from "../description";
 import contacts from "../contacts";
 import ScrollToTop from "react-scroll-to-top";
+import Row from 'react-bootstrap/Row';
 
 function createCard(contact) {
     return (
@@ -33,16 +34,15 @@ function createCard(contact) {
  function Page2() {
     return <div>
     <Features />
-    <div style={{color:"white", fontSize:40, textAlign:"center"}}>Advantages</div>
-    {/* {description.map(createText)} */}
-    <div style={{paddingLeft:200, paddingRight:200}}>
+    <div style={{color:"black", fontSize:40, textAlign:"center",marginTop:40,marginBottom:30}}>Advantages</div>
+    <Row>
       {description.map(createText)}
-    </div>
-    <div style={{color:"white", fontSize:40, textAlign:"center"}}>Team Members</div>
-    <div style={{paddingLeft:130, paddingRight:100}}>
+    </Row>
+    <div style={{color:"black", fontSize:40, textAlign:"center",marginTop:40,marginBottom:30}}>Team Members</div>
+    <Row>
       {contacts.map(createCard)}
-    </div>
-    <ScrollToTop smooth="true" viewBox="0 -50 350 200" />
+    </Row>
+    <ScrollToTop smooth="true" viewBox="0 0 260 200" />
   </div>
  }
  export default Page2;

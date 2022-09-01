@@ -1,13 +1,12 @@
 import React from "react";
+import Col from 'react-bootstrap/Col';
 
 function Adv(props) {
   return (
-    <span className="adv">
+    <Col xs={12} md={6} lg={4} className="dis-adv-row">
       <img className="adv-img" src={props.img} alt="adv-img" />
-      <div className="container">
-        <p className="adv-description">{props.text}</p>
-      </div>
-    </span>
+      <p className="adv-desc" >{props.text}</p>
+    </Col>
   );
 }
 
