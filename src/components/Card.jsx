@@ -4,8 +4,9 @@ import Col from 'react-bootstrap/Col';
 
 function Card(props) {
   return (
-    <Col xs={12} md={6} lg={4} className="card">
-      <img className="team-img" src={props.img} alt="card" />
+    <Col xs={12} md={6} lg={4} className="alic">
+    <div className="cardd">
+    <img className="team-img" src={props.img} alt="card" />
       <div className="container">
         <h2 className="team-mem-name">{props.name}</h2>
         <div className="icons">
@@ -15,6 +16,7 @@ function Card(props) {
           <span><SocialIcon style={{width:40, height:40, margin:5}} url={props.github} network="github" /></span>
         </div>
       </div>
+    </div>
     </Col>
   );
 }

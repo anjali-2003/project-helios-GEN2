@@ -17,9 +17,9 @@ function Onpage(){
             <Heading />
             <div className="on-off">
               <Link to={'/'}>
-              <Button size="lg">OFF</Button>
+              <Button variant="dark" size="lg">OFF</Button>
               </Link>
-              <Button size="lg"> ON </Button>
+              <Button variant="dark" size="lg"> ON </Button>
             </div>
             </Col>
           <Col className="img-col"><ImageOn /></Col>

@@ -17,9 +17,9 @@ function Startingpage(){
           <Col>
             <Heading />
             <div className="on-off">
-              <Button size="lg">OFF</Button>
+              <Button variant="outline-secondary" size="lg">OFF</Button>
               <Link to={'/on'} onClick={() => changeColor("#FFFFFF")}>
-                <Button size="lg"> ON </Button>
+                <Button variant="outline-secondary" size="lg"> ON </Button>
               </Link>
             </div>
           </Col>

@@ -1,13 +1,13 @@
 
 h1{
-    color: blue;
+    color: gray;
 }
 h2{
-    color: blue;
+    color: gray;
     font-size: 40px;
 }
 p{
-    color: blue;
+    color: gray;
 }
 
 .top-div{
@@ -101,13 +101,34 @@ p{
     width: 60%;
     padding: 50px;
 }
+.f{
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    width: 60%;
+    box-shadow: 0 4px 8px 0 rgba(15, 14, 14, 0.4) ;
+}
+/* .f-img{
 
-.card {
+} */
+.f-pt{
+    text-align: center;
+    margin: auto;
+    width: 60%;
+}
+
+.cardd {
     box-shadow: 0 4px 8px 0 rgba(15, 14, 14, 0.4);
     background-color: rgb(139, 222, 186, 0.2);
-    width: 200px;
     display: inline-block;
     border-radius: 8px;
+    padding-top: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 320px;
+}
+.alic {
+    text-align: center;
 }
 
 .team-img{
