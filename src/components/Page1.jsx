@@ -8,7 +8,7 @@ import Row from 'react-bootstrap/Row';
 
 function createText(des) {
     return(
-      <Adv 
+      <Adv  
         key={des.id}
         img={des.img}
         text={des.text}
@@ -18,7 +18,7 @@ function createText(des) {
   
 function Page1() {
     return <div >
-      <div style={{color:"white",fontSize:40,textAlign:"center",marginTop:100,marginBottom:30}}>Dis - advantages</div>
+      <div id="dis-advantages" style={{color:"white",fontSize:40,textAlign:"center",marginTop:100,marginBottom:30, fontFamily: 'Acme sans-serif'}}>Dis - advantages</div>
       <Row>
         {description.map(createText)}
       </Row>

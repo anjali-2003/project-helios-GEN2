@@ -108,13 +108,25 @@ p{
     width: 60%;
     box-shadow: 0 4px 8px 0 rgba(15, 14, 14, 0.4) ;
 }
-/* .f-img{
+#akhil{
+    max-width: 50%;
+    align-self: center;
+    text-align: center;
+   margin-left: 25%;
+   box-shadow: 0 6px 6px 0 rgba(15, 14, 14, 0.7) ;
 
-} */
+}
+.f-img{
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+}
 .f-pt{
     text-align: center;
     margin: auto;
-    width: 60%;
+    width: 80%;
+    padding-bottom: 20px;
+    text-align: justify;
 }
 
 .cardd {
@@ -146,5 +158,23 @@ p{
     margin-left: 12px;
 }
 
+.para{
+    font-family: 'Open Sans', sans-serif;
+}
 
+#dis-advantages {
+    color:"white";
+    font-size:40;
+    text-align:"center";
+    margin-top:100;
+    margin-bottom:30;
+    font-family: 'Acme sans-serif'
+}
 
+/* .xyz{
+    color:"black";
+    font-size:40;
+    text-align:"center";
+    margin-top:100;
+    margin-bottom:30;
+} */

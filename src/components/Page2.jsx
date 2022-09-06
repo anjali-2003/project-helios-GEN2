@@ -34,11 +34,11 @@ function createCard(contact) {
  function Page2() {
     return <div>
     <Features />
-    <div style={{color:"black", fontSize:40, textAlign:"center",marginTop:40,marginBottom:30}}>Advantages</div>
+    <div style={{color:"black", fontSize:40, textAlign:"center",marginTop:40,marginBottom:30, fontFamily: 'Acme sans-serif'}}>Advantages</div>
     <Row>
       {description.map(createText)}
     </Row>
-    <div style={{color:"black", fontSize:40, textAlign:"center",marginTop:40,marginBottom:30}}>Team Members</div>
+    <div style={{color:"black", fontSize:40, textAlign:"center",marginTop:40,marginBottom:30, fontFamily: 'Acme sans-serif'}}>Team Members</div>
     <Row>
       {contacts.map(createCard)}
     </Row>
