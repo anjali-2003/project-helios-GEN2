@@ -1,11 +1,11 @@
 
-import React from "react";
+import React, {useState} from "react";
 import Features from "./Features";
 import Adv from "./Adv";
 import Card from "./Card";
 import description from "../description";
 import contacts from "../contacts";
-import ScrollToTop from "react-scroll-to-top";
+import { MDBFooter} from 'mdb-react-ui-kit';
 import Row from 'react-bootstrap/Row';
 
 function createCard(contact) {
@@ -42,7 +42,13 @@ function createCard(contact) {
     <Row>
       {contacts.map(createCard)}
     </Row>
-    <ScrollToTop smooth="true" viewBox="0 0 260 200" />
+    <MDBFooter>
+      <div className='text-center p-4' style={{ backgroundColor: "rgb(235,235,235)" }}>
+        <a  title="Scroll to top" className='text-reset fw-bold' href='#'>
+        <img className="icon" src="images/arrow-icon-dark.png" />
+        </a>
+      </div>
+    </MDBFooter>
   </div>
  }
  export default Page2;

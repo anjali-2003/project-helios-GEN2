@@ -17,7 +17,11 @@ p{
 
 .on-off{
     text-align: center;
-    margin-top: 150px;
+    margin-top: 70px;
+}
+
+.btn-img{
+    width: 70px;
 }
 
 .img-col{
@@ -169,6 +173,11 @@ p{
     margin-top:100;
     margin-bottom:30;
     font-family: 'Acme sans-serif'
+}
+
+.icon{
+    width:30px;
+    height:30px;
 }
 
 /* .xyz{

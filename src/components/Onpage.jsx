@@ -7,15 +7,20 @@ import {Button} from "react-bootstrap";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Startingpage from "./Startingpage";
+import MainImage from "./MainImage";
+import Page1 from "./Page1";
+import { MDBFooter } from "mdb-react-ui-kit";
 
 function Onpage(){
-  const [allow,setallow] =useState(false) 
+  const [allow,setallow] =useState(false);
+  const [switchy, setty] = useState(false);
+  const [color, changeColor] = useState("#000000");
 
   if(allow===true) {
-
     return(<Startingpage/>)
   } 
-
+  
+  const a = false
     
     return (
       <div class="overflow-hidden">
@@ -24,13 +29,20 @@ function Onpage(){
             <Heading />
             <div className="on-off">
               {/* <Link to={'/'}> */}
-              <Button variant="dark" size="lg" onClick={
+              {/* <Button variant="dark" size="lg" onClick={
                 ()=>{
                   setallow(!allow)
                 }
-              }>OFF</Button>
+              }>OFF</Button> */}
               {/* </Link> */}
-              <Button variant="dark" size="lg"> ON </Button>
+              {/* <Button variant="dark" size="lg"> ON </Button> */}
+              <img className="btn-img" src="images/on.jpg" onClick={
+                ()=>{
+                  setallow(!allow)
+                  // a = true
+
+                }
+              }/>
             </div>
             </Col>
           <Col className="img-col"><ImageOn /></Col>
